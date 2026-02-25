@@ -1,0 +1,27 @@
+{
+  "patches": {
+    "pkg:npm/minimist@1.2.0": {
+      "uuid": "a905136e-756c-4a02-8d0c-d14dad0b0ebd",
+      "exportedAt": "Wed, 22 Oct 2025 22:19:30 GMT",
+      "files": {
+        "package/index.js": {
+          "beforeHash": "b3daeed9f0c442c1c4d9be6adc3e2a0ee269693fa936b44d98df7503416aa65a",
+          "afterHash": "86e380971600378d1f37a68f24af6827d698ca5addc9ec19637372672e0efedc"
+        }
+      },
+      "vulnerabilities": {
+        "GHSA-xvch-5gv4-984h": {
+          "cves": [
+            "CVE-2021-44906"
+          ],
+          "summary": "Prototype Pollution in minimist",
+          "severity": "CRITICAL",
+          "description": "Minimist prior to 1.2.6 and 0.2.4 is vulnerable to Prototype Pollution via file `index.js`, function `setKey()` (lines 69-95)."
+        }
+      },
+      "description": "",
+      "license": "MIT",
+      "tier": "free"
+    }
+  }
+}
